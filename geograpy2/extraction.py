@@ -60,5 +60,5 @@ class Extractor(object):
         nes = self.named_entities()
         for ne in nes:
             if type(ne) is nltk.tree.Tree:
-                if ne.label() in ['GPE', 'PERSON', 'ORGANIZATION']:
+                if ne.node in ['GPE', 'PERSON', 'ORGANIZATION']:
                     self.places.append(u' '.join([i[0] for i in ne.leaves()]))

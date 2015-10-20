@@ -24,7 +24,7 @@ setup(name='geograpy2',
             'jellyfish',
             'pycountry'
       ],
-      scripts=['geograpy/bin/geograpy-nltk'],
+      scripts=['geograpy2/bin/geograpy-nltk'],
       package_data = {
             'geograpy': ['data/*.csv'],
       },
